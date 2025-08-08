@@ -17,7 +17,7 @@ services:
     depends_on:
       - mongo
     environment:
-      - MONGO_URI=mongodb://mongo:27017/urlshortener
+      - MONGO_URI=mongodb://mongo-svc:27017/urlshortener
 
   frontend:
     build: ./frontend
